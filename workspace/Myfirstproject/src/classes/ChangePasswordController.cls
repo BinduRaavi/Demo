@@ -4,7 +4,7 @@
 public with sharing class ChangePasswordController {
     public String oldPassword_bindu_edit {get; set;}
     public String newPassword_bindu_edit {get; set;}
-    public String verifyNewPassword_bindu_edit {get; set;}        
+    public String verifyNewPassword {get; set;}        
     
     public PageReference changePassword() {
         return Site.changePassword(newPassword_bindu_edit, verifyNewPassword_bindu_edit, oldPassword_bindu_edit);    
